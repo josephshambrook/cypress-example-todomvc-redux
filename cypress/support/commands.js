@@ -82,3 +82,5 @@ Cypress.Commands.add('createTodo', function (todo) {
     cmd.set({ $el: $li }).snapshot().end()
   })
 })
+
+Cypress.Commands.add("getTestId", id => cy.get(`[data-testid="${id}"]`));
